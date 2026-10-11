@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Notice board: lines scroll from bottom to top, pause on hover */
+@keyframes notice-up {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+.notice-scroll {
+  animation: notice-up var(--dur, 90s) linear infinite;
+}
+.notice-scroll:hover,
+.notice-scroll:focus-within {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .notice-scroll { animation: none; }
+}
+
+/* Latest-notice ticker */
+@keyframes ticker-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.ticker-run {
+  animation: ticker-left var(--dur, 50s) linear infinite;
+}
+.ticker-run:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-run { animation: none; }
+}
