@@ -230,7 +230,7 @@ export default function Footer() {
       {/* ===== Black copyright bar (always at the very bottom) ===== */}
       <div className="bg-black px-6 py-[22px] font-['Raleway','Hind_Siliguri',sans-serif] text-[15px] text-white">
         <div className="mx-auto max-w-[1180px]">
-          © 2026 Munna&apos;s Academy. All Rights Reserved. || Developed &amp;
+          © 2026 Munna&apos;s Academy. All Rights Reserved. || Developed 
            by Belerion Technology
         </div>
       </div>
