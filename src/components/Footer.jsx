@@ -231,7 +231,7 @@ export default function Footer() {
       <div className="bg-black px-6 py-[22px] font-['Raleway','Hind_Siliguri',sans-serif] text-[15px] text-white">
         <div className="mx-auto max-w-[1180px]">
           © 2026 Munna&apos;s Academy. All Rights Reserved. || Developed &amp;
-          Maintain by: E-SHEBA
+           by Belerion Technology
         </div>
       </div>
     </>
